@@ -16,8 +16,6 @@ ESP32-based plant moisture monitor with a web interface.
 | GND    | GND   |
 | AOUT   | GPIO 34 |
 
-GPIO 34 is used because it's on ADC1, which works while WiFi is active (ADC2 pins don't).
-
 ### Calibration
 
 The sensor outputs a voltage inversely proportional to moisture. Default calibration values in `moisture_sensor.c`:
